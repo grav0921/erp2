@@ -2418,3 +2418,7 @@ section {
 .logo2{
   margin-right: 15px;
 }
+.wh-sm{
+  width: 2.5rem;
+  height: 2.5rem;
+}
