@@ -448,7 +448,7 @@ section {
 .hero2 {
   width: 100%;
   height: 100vh;
-  background: url(../img/values-7.png) top center no-repeat;
+  background: url(../img/man-bg.png) top center no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@ section {
 .hero1 {
   width: 100%;
   height: 100vh;
-  background: url(../img/bg_log2.png) top center no-repeat;
+  background: url(../img/hero-bg.png) top center no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -468,7 +468,7 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  /*background: url(../img/hero-bg.png) top center no-repeat;*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -483,10 +483,16 @@ section {
   /*line-height: 7rem;*/
 }
 
-.hero h2 {
-  color: #444444;
-  margin: 15px 0 0 0;
-  font-size: 26px;
+.hero h1 {
+  margin: 0;
+  /*font-size: 48px;*/
+  font-weight: 700;
+  color: #012970;
+  /*line-height: 7rem;*/
+}
+
+.hero-lh{
+  line-height: 5rem;
 }
 
 .hero .btn-get-started {
