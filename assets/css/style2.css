@@ -465,6 +465,7 @@ section {
   height: 100vh;
   background: url(../img/hero-bg.png) top center no-repeat;
   background-size: cover;
+  background-attachment: scroll;
 }
 
 .hero2 {
@@ -566,40 +567,47 @@ section {
 
 @media (min-width: 1024px) {
   .hero {
-    background-attachment: fixed;
+    background-attachment: fixeda;
   }
 }
 
 @media (max-width: 991px) {
-  .hero {
+  .hero, .hero2{
     height: auto;
     padding: 120px 0 60px 0;
   }
-  .hero .hero-img {
+  .hero .hero-img, .hero2 .hero2-img {
     text-align: center;
     margin-top: 80px;
   }
-  .hero .hero-img img {
+  .hero .hero-img img, .hero2 .hero2-img img {
     width: 80%;
   }
 }
 
 @media (max-width: 768px) {
-  .hero {
+  .hero, .hero2{
     text-align: center;
   }
-  .hero h1 {
+  .services .section-header{
+    text-align: center;
+  }
+  .services .garis-lb{
+    margin: auto;
+    width: 100%;
+  }
+  .hero h1, .hero2 h1 {
     font-size: 32px;
     line-height: 3rem;
   }
-  .hero h2 {
+  .hero h2, .hero2 h2 {
     font-size: 24px;
   }
-  .hero .hero-img img {
+  .hero .hero-img img, .hero2 .hero2-img img {
     width: 100%;
   }
-  .garis-lb{
-  width: auto !important;
+  .garis-db{
+  width: 100% !important;
   }
 }
 
@@ -863,6 +871,11 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services{
+  background: #11326d;
+  border-top-left-radius: 10rem;
+  margin: 120px 0;
+}
 .services .service-box {
   /*box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);*/
   box-shadow: -1px 2px 20px 0px rgb(0 0 0 / 36%);
@@ -899,8 +912,9 @@ section {
 }
 
 .services .service-box h3 {
-  color: #444444;
-  font-weight: 700;
+  color: #f8f9fa;
+  font-weight: 500;
+  padding-bottom: 10pt;
 }
 
 .services .service-box .read-more {
@@ -1334,8 +1348,8 @@ section {
 .portfolio .portfolio-wrap .portfolio-info::before {
   display: block;
   content: "";
-  width: 48px;
-  height: 48px;
+/*  width: 48px;
+  height: 48px;*/
   position: absolute;
   top: 35px;
   left: 35px;
@@ -1348,8 +1362,8 @@ section {
 .portfolio .portfolio-wrap .portfolio-info::after {
   display: block;
   content: "";
-  width: 48px;
-  height: 48px;
+/*  width: 48px;
+  height: 48px;*/
   position: absolute;
   bottom: 35px;
   right: 35px;
@@ -2761,7 +2775,7 @@ section {
 }
 
 .text-left{
-  text-align: left !important; 
+  text-align: left; 
 }
 
 .garis-db{
@@ -2777,6 +2791,9 @@ section {
     padding: 1rem;
     font-size: 1.2rem !important;
     transition: 1s;
+}
+.bg-lightb{
+  background-color: #f6f9ff !important;
 }
 
 .mask{
