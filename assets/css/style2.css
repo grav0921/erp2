@@ -530,10 +530,10 @@ section {
 
 .hero h1 {
   margin: 0;
-  /*font-size: 3rem;*/
+  font-size: 3rem;
   font-weight: 700;
   color: #012970;
-  line-height: 5rem;
+  line-height: 4rem;
 }
 
 .hero h2 {
@@ -580,6 +580,12 @@ section {
   }
 }
 
+@media (max-width: 1024px){
+  .hero h1{
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 991px) {
   .hero, .hero2{
     height: auto;
@@ -591,6 +597,9 @@ section {
   }
   .hero .hero-img img, .hero2 .hero2-img img {
     width: 80%;
+  }
+  .hero h1{
+    font-size: 2.2rem;
   }
 }
 
@@ -625,6 +634,11 @@ section {
   .service p{
     font-size: 18px;
     line-height: 2rem;
+  }
+  .hero .text-md-start{
+    display: flex;
+    justify-content: center;
+
   }
 }
 
@@ -2701,7 +2715,7 @@ section {
 }
 
 .lh-hero{
-  line-height: 4.5rem;
+  line-height: 2.5rem;
 }
 .box-shadow{
   box-shadow: 0px 5px 30px rgb(149 149 149 / 40%);
