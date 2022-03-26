@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
+.text-right{
+  text-align:right;
+}
+
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -468,6 +472,19 @@ section {
   background-attachment: scroll;
 }
 
+.hero-c{
+  width: 100%;
+  height: 100vh
+}
+
+.hero-m {
+  width: 100%;
+  height: 115vh;
+  background: url(../img/hero-bg3.png) top center no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
 .hero2 {
   width: 100%;
   height: 80vh !important;
@@ -689,6 +706,16 @@ section {
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
+.values h1{
+  display: flex;
+  margin: auto;
+  width: 60%;
+  line-height: 3.8rem;
+  justify-content: center;
+  text-align: center;
+  padding: 0 0 30pt 0;
+}
+
 .values .box {
   padding: 30px;
   box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
@@ -716,6 +743,10 @@ section {
 
 .values .box:hover img {
   transform: scale(1);
+}
+
+.values .carousel-inner h4{
+  color: #332c2b;
 }
 
 /*--------------------------------------------------------------
@@ -898,7 +929,17 @@ section {
   display: flex; 
   justify-content: space-between; 
   gap:2pt
+}
 
+.values .values-content2{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap:2pt;
+}
+
+.values .values-content2 .values-sq{
+  background: black;
 }
 
 .values .values-sq{
@@ -943,13 +984,11 @@ section {
 }
 
 .carousel-indicators [data-bs-target] {
-  border-top: none;
-  border-bottom: none;
   padding: 20pt;
 }
 
 .services{
-  background: #11326d;
+  /*background: #11326d;*/
   border-radius: 2rem;
   margin: 120px 0;
 }
@@ -963,7 +1002,17 @@ section {
   border-radius: 5px;
   /*background: rgba(0, 131, 141, 0.2) !important;*/
   background: transparent;
-  color: #ffff;
+  color: #11326d;
+}
+
+.services h1{
+  display: flex;
+  margin: auto;
+  width: 60%;
+  justify-content: center;
+  text-align: center;
+  padding: 0 0 40pt 0;
+  line-height: 3.8rem;
 }
 
 /*service old*/
@@ -989,7 +1038,7 @@ section {
 }
 
 .services .service-box h3 {
-  color: #f8f9fa;
+  color: #11326d;
   font-weight: 500;
   padding-bottom: 10pt;
 }
@@ -2872,6 +2921,9 @@ section {
 .bg-lightb{
   background-color: #f6f9ff !important;
 }
+.bg-light{
+  background-color: #f8fafc !important;
+}
 
 .mask{
     position: absolute;
@@ -2929,13 +2981,90 @@ section {
 .carousel-indicators [data-bs-target] {
   text-indent: 0pt;
   width: 50%;
-  margin-left: pt;
-  margin-right:pt;
+  margin-left: 5pt;
+  margin-right: 5pt;
   height: 4rem;
+  margin-bottom: 20pt;
+  padding: 10pt 30pt;
 }
 .carousel-indicators{
   position: unset;
   margin-left: 0;
   margin-right: 0;
   z-index: 9999;
+}
+
+@charset "UTF-16";
+.lfil0 {fill:#0D5279}
+.lfil1 {fill:#22A7E1}
+.lfil2 {fill:#332C2B;fill-rule:nonzero}
+
+@media (max-width: 1024px){
+  .carousel-indicators [data-bs-target]{
+    padding: 5pt 15pt;
+  }
+}
+@media (max-width: 768px){
+  .carousel-indicators [data-bs-target]{
+    border: none;
+    /*background: black;*/
+    padding: 0 10pt;
+  }
+  .values .values-sq i{
+    font-size: 2rem;
+  }
+  .values .values-sq.active, .values .values-sq:hover{
+    border: none;
+  }
+}
+.values .dinline{
+  display: flex;
+  gap:2pt;
+}
+
+@media (max-width: 636px){
+  .values .values-sq .vr{
+    display: none;
+    background: black;
+  }
+  .values #dnaone{
+    display: none;
+  }
+  .values .dinline{
+    display: flex;
+  }
+  .values .values-content{
+    display: block;
+  }
+}
+.vr{
+  background: black;
+}
+
+.values-m header{
+  display: flex;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 40pt 0;
+    line-height: 3.8rem;
+}
+
+.img-m{
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-attachment: scroll;
+  background: url(../img/portfolio/manfaat1.jpg) no-repeat;
+  /*background: black;*/
+}
+
+.values-m .content{
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  padding: 0 8rem;
+  width: 60%;
+  text-transform: capitalize;
 }
