@@ -2994,6 +2994,34 @@ section {
   z-index: 9999;
 }
 
+.values-m header{
+  display: flex;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 40pt 0;
+    line-height: 3.8rem;
+}
+
+.img-m{
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-attachment: scroll;
+  background: url(../img/portfolio/manfaat1.jpg) no-repeat;
+  /*background: black;*/
+}
+
+.values-m .content{
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  padding: 0 8rem;
+  width: 60%;
+  text-transform: capitalize;
+}
+
 @charset "UTF-16";
 .lfil0 {fill:#0D5279}
 .lfil1 {fill:#22A7E1}
@@ -3002,6 +3030,9 @@ section {
 @media (max-width: 1024px){
   .carousel-indicators [data-bs-target]{
     padding: 5pt 15pt;
+  }
+  .values .values-konten{
+    height: 60vh;
   }
 }
 @media (max-width: 768px){
@@ -3041,30 +3072,3 @@ section {
   background: black;
 }
 
-.values-m header{
-  display: flex;
-    margin: auto;
-    width: 60%;
-    justify-content: center;
-    text-align: center;
-    padding: 0 0 40pt 0;
-    line-height: 3.8rem;
-}
-
-.img-m{
-  width: 100%;
-  height: 60vh;
-  background-size: cover;
-  background-attachment: scroll;
-  background: url(../img/portfolio/manfaat1.jpg) no-repeat;
-  /*background: black;*/
-}
-
-.values-m .content{
-  display: flex;
-  align-items: center;
-  height: 60vh;
-  padding: 0 8rem;
-  width: 60%;
-  text-transform: capitalize;
-}
